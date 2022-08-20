@@ -10,58 +10,69 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <div class="quiz-container" id="quiz">
-            <div style="text-align: center; font-weight: 600; font-size: 2rem; color:rgba(14, 158, 30, 0.85) ;">
-                <p>Mời bạn trả lời câu hỏi?</p>
-
+        <div class="wrapper">
+            <div class="quiz-container" id="quiz">
+                <div style="text-align: center; font-weight: 600; font-size: 2rem; color:rgba(14, 158, 30, 0.85) ;">
+                    <p>Mời bạn trả lời câu hỏi?</p>
+    
+                </div>
+                <div class="quiz-header">
+    
+                    <h2 id="question">Question text</h2>
+                    <ul>
+                        <li>
+                            <input
+                                type="radio"
+                                id="a"
+                                name="answer"
+                                class="answer"
+                            />
+                            <label id="a_text" for="a">Question</label>
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                id="b"
+                                name="answer"
+                                class="answer"
+                            />
+                            <label id="b_text" for="b">Question</label>
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                id="c"
+                                name="answer"
+                                class="answer"
+                            />
+                            <label id="c_text" for="c">Question</label>
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                id="d"
+                                name="answer"
+                                class="answer"
+                            />
+                            <label id="d_text" for="d" >Question </label>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <center class="buttons">
+                    <button style="padding: 5px; box-sizing: border-box;" class="btn-hover color-1" id="submit">Submit</button>
+                </center>
             </div>
-            <div class="quiz-header">
-
-                <h2 id="question">Question text</h2>
-                <ul>
-                    <li>
-                        <input
-                            type="radio"
-                            id="a"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="a_text" for="a">Question</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="b"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="b_text" for="b">Question</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="c"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="c_text" for="c">Question</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="d"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="d_text" for="d" >Question </label>
-                    </li>
-                    
-                </ul>
-            </div>
-            <center class="buttons">
-                <button style="padding: 5px; box-sizing: border-box;" class="btn-hover color-1" id="submit">Submit</button>
-            </center>
         </div>
+
+        <footer class="bg-dark text-center text-lg-start text-light" id="footer">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0,0.2);">
+                <!-- &copy là biểu tượng copyright  {% now "Y" %} - Lấy năm hiện tại -->
+                Copyright &copy <span>All rights reserved </span> | Made with 
+                <i class="text-danger fas fa-heartbeat blink_me" style="font-size: 15px;"></i> by
+                <a href="#" target="_blank" style="color: #0dcaf0; text-decoration: none;">HoVanTai</a>
+            </div>
+        </footer>
 
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
